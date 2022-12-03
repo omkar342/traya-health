@@ -30,7 +30,7 @@ function MultiStepForm() {
   return (
     // <div className={classes.MultiStepForm}>
     <Box sx={{ padding: "30px 20px" }}>
-      <Stepper nonLinear activeStep={activeStep}>
+      <Stepper activeStep={activeStep}>
         {steps.map((label, index) => (
           <Step
             key={label}
@@ -45,6 +45,7 @@ function MultiStepForm() {
       {activeStep == steps.length ? (
         <Box
           display="flex"
+          flexDirection="column"
           justifyContent="center"
           bg="white"
           padding="20px"
@@ -53,7 +54,8 @@ function MultiStepForm() {
           borderRadius="10px"
           border="10px solid #BEE3F8"
         >
-          <Text style={{ fontSize: "30px" }}>Steps are Completed</Text>
+          <Text style={{ fontSize: "30px" }}>Finish!</Text>
+          <Text style={{ fontSize: "15px" }}>All The Steps are Completed</Text>
         </Box>
       ) : (
         <Container

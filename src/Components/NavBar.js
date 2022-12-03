@@ -21,7 +21,7 @@ function NavBar() {
           <img src={traya} alt="" />
         </div>
         <Button
-          href="https://www.google.com"
+          href="https://traya.health/"
           style={{
             margin: "auto 25px",
             color: "gray",
@@ -29,7 +29,7 @@ function NavBar() {
           }}
           variant="ouline"
         >
-          Hello World
+          Main Page
         </Button>
       </Box>
     </div>
